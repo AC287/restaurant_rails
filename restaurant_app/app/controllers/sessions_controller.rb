@@ -5,9 +5,13 @@ class SessionsController < ApplicationController
     # if user && user.authenticate(params[:password])
     if user && (user.password_digest == params[:password])
       session[:current_user_id] = user.id
-      redirect_to root_path
+      if user.role == 'admin'
+        redirect_to admins_path
+      else
+        redirect_to user_path
+      end
     else
-      redirect_to splash_path
+      redirect_to root_path
     end
   end
 

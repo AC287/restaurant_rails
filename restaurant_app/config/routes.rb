@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
   # root 'users#index'
   resources :users
+  resources :admins
+  resources :mitems
+  resources :customers
 
   get 'sessions/new' => 'session#new'
   post 'sessions' => 'sessions#create'

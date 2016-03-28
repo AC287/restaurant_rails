@@ -4,7 +4,8 @@
   <p>If you're new and/or need access, consult with your manager.</p>
   <div class="login">
     <% if session[:current_user_id] %>
-    <%= link_to "#{User.find(session[:current_user_id]).name}", user_path(session[:current_user_id]) %> ||
+    <!-- <%= link_to "#{User.find(session[:current_user_id]).name}", user_path(session[:current_user_id]) %> || -->
+    <%= User.find(session[:current_user_id]).name %> || 
     <%= link_to "logout", sessions_path, method: :delete %>
     <% else %>
     <%= form_tag(sessions_path) do %>

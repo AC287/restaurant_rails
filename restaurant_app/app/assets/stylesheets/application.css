@@ -21,3 +21,47 @@
 .stitle {
   text-align: center;
 }
+
+.user-all {
+  text-align: center;
+}
+
+.user-one {
+  height: 300px;
+  width: 125px;
+  display: inline-block;
+  padding: 10px;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+}
+
+.profileimg {
+  height: 120px;
+  width: 120px;
+}
+
+.mitem-all {
+  text-align: center;
+}
+
+.mitem-one {
+  height: 300px;
+  width: 125px;
+  display: inline-block;
+  padding: 10px;
+  /*border: 1px solid black;*/
+  margin: 0 auto;
+  text-align: center;
+  float: left;
+}
+
+.newuser {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.formdiv {
+  text-align: center;
+}

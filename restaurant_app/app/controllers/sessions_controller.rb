@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       if user.role == 'admin'
         redirect_to admins_path
       else
-        redirect_to user_path
+        redirect_to root_path
       end
     else
       redirect_to root_path

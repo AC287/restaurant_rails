@@ -1,0 +1,8 @@
+<div class="container formdiv">
+  <h1>EDIT MENU ITEM</h1>
+  <div class="form">
+    <%= render partial: 'form' %><br>
+    <%= link_to "Delete", mitem_path(@mitem), method: :delete %> ||
+    <%= link_to "Back", mitems_path %>
+  </div>
+</div>

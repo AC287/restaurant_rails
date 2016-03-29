@@ -1,0 +1,19 @@
+<div class="one">
+  <div class="stitle">
+    <strong><%= customer.name %></strong>
+  </div>
+  <p>
+    Table#: <%= customer.table %><br>
+    Party Size: <%= customer.party_size %><br>
+    <% if (customer.receipt_id)%>
+
+    there might be receipt
+    <% else %>
+
+    there is no such receipt
+    <% end %>
+  </p>
+  <p style="text-align: center">
+    <%= link_to "Edit", edit_customer_path(customer) %>
+  </p>
+</div>

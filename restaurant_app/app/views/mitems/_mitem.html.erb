@@ -1,0 +1,16 @@
+<div class="one">
+  <div class="stitle">
+    <strong><%= mitem.name %></strong>
+  </div>
+  <p>
+    <img class="profileimg" src="<%= mitem.img_url %>" />
+  </p>
+  <p>
+    $ <%= mitem.price %><br>
+    Description: <br>
+    <%= mitem.desc %>
+  </p>
+  <p style="text-align: center">
+    <%= link_to "Edit", edit_mitem_path(mitem) %>
+  </p>
+</div>

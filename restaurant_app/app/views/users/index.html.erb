@@ -6,10 +6,10 @@
     <%= link_to "Logout", sessions_path, method: :delete %> ||
     <%= link_to "Main", admins_path %>
   </p>
-  <div class="newuser">
+  <div class="new">
     <h3><%= link_to "Create New User", new_user_path %></h3>
   </div>
-  <div class="user-all">
+  <div class="all">
     <%= render @users %>
   </div>
   <% else %>

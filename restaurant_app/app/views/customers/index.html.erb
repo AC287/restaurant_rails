@@ -6,8 +6,14 @@
     <% if User.find(session[:current_user_id]).role == "admin" %>
     <%= link_to "Main", admins_path %>
     <% else %>
+
     <% end %>
   </p>
-  <h1>THIS IS CUSTOMERS AND STUFF...</h1>
+  <div class="new">
+    <h3><%= link_to "Add New Customer", new_customer_path %></h3>
+  </div>
+  <div class="custoemr-all">
+    <%= render @customers %>
+  </div>
 
 </div>

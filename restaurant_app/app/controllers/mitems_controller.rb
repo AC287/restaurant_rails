@@ -38,5 +38,5 @@ class MitemsController < ApplicationController
   def mitem_params
     params.require(:mitem).permit(:name, :price, :img_url, :desc)
   end
-  
+
 end

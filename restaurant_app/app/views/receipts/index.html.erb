@@ -1,0 +1,13 @@
+<!-- THIS IS RECEIPT PAGE -->
+<div class="container">
+  <h1 class="stitle">RECEIPT Panel for <%= User.find(session[:current_user_id]).name %></h1>
+  <p class="stitle">
+    <%= link_to "Logout", sessions_path, method: :delete %> ||
+    <% if User.find(session[:current_user_id]).role == "admin" %>
+    <%= link_to "Main", admins_path %>
+    <% else %>
+    <% end %>
+  </p>
+  <h1>THIS IS RECEIPTS AND STUFF...</h1>
+
+</div>

@@ -6,10 +6,10 @@
     <%= link_to "Logout", sessions_path, method: :delete %> ||
     <%= link_to "Main", admins_path %>
   </p>
-  <div class="newmitem" style="text-align: center">
+  <div class="new" style="text-align: center">
     <h3><%= link_to "Add new menu item", new_mitem_path %></h3>
   </div>
-  <div class="mitem-all">
+  <div class="all">
     <%= render @mitems %>
   </div>
   <% else %>

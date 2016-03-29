@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :admins
   resources :mitems
   resources :customers
+  resources :receipts
 
   get 'sessions/new' => 'session#new'
   post 'sessions' => 'sessions#create'
